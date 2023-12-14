@@ -1,0 +1,25 @@
+footer{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: var(--bleu);
+    width: 100%;
+}
+.footerList{
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+.footerIcon{
+    display: flex;
+    padding-right: 26px;
+    justify-content: flex-end;
+}
+.footerLink__Instagram{
+    margin-right: 8px;
+}
+.footerLink{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--h2);
+}

@@ -29,8 +29,41 @@
         <h1 class="artpj__title">Philip C. Johnson</h1>
         <img src="../public/img/images/PJohnson.png" alt="Philip Johnson">
     </div>
-    <section>
-        
+    <section class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+        <button class="carrousel_btn btnCarAv" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img src="../public/img/icones/BtnCarAv.svg" alt="bouton carrousel avant"></button>
+        <button class="carrousel_btn btnCarAp" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"><img src="../public/img/icones/BtnCarAp.svg" alt="bouton carrousel après"></button>
+        <div class="carrousel_parent-ecrans" x-ref="parent">
+            <div id="image-1" class="carrousel_ecran">
+                <figure>
+                    <img src="../public/img/images/work1.webp" alt="Glass House">
+                    <figcaption>Glass House</figcaption>
+                </figure>
+            </div>
+            <div id="image-2" class="carrousel_ecran">
+                <figure>
+                    <img src="../public/img/images/work2.webp" alt="Seagram Building">
+                    <figcaption>Seagram Building</figcaption>
+                </figure>
+            </div>
+            <div id="image-3" class="carrousel_ecran">
+                <figure>
+                    <img src="../public/img/images/work3.webp" alt="AT&T Building">
+                    <figcaption>AT&T Building</figcaption>
+                </figure>
+            </div>
+            <div id="image-4" class="carrousel_ecran">
+                <figure>
+                    <img src="../public/img/images/work4.webp" alt="Crystal Cathedral">
+                    <figcaption>Crystal Cathedral</figcaption>
+                </figure>
+            </div>
+            <div id="image-5" class="carrousel_ecran">
+                <figure>
+                    <img src="../public/img/images/work5.webp" alt="MoMA expension">
+                    <figcaption>MoMA expension</figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 </body>
 </html>
