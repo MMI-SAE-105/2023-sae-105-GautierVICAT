@@ -1,0 +1,22 @@
+.textAccueil{
+    font-size: var(--b2);
+    font-weight: 400;
+    font-family: var(--tf);
+    margin: 10px;
+}
+.btnInfo{
+    width: 100%;
+}
+.btnInfo__link{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--bleu);
+    padding:17px;
+    border-style: solid;
+    border-color: var(--cbleu);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 3px;
+    margin:10px;
+}
