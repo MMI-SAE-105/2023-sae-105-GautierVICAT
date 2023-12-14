@@ -22,4 +22,6 @@ footer{
     text-decoration: none;
     color: var(--white);
     font-size: var(--h2);
+    line-height: 160%;
+    font-family: var(--tf);
 }
