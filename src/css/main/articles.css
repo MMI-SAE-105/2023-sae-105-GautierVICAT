@@ -1,0 +1,24 @@
+
+.articleTitle{
+    font-size: var(--h2);
+    font-family: var(--tf);
+    font-weight: 700;
+    color: var(--noir);
+    padding: 10px;
+}
+.articleText{
+    font-size: var(--b2);
+    font-family: var(--tf);
+    font-weight: 400;
+    color: var(--noir);
+    padding: 10px;
+}
+.articlesImg{
+    width: 100%;
+    border: 3px solid var(--cbleu);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.articleImg{
+    padding: 10px;
+}
