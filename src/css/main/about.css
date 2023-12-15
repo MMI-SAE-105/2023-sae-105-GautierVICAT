@@ -11,3 +11,45 @@
     font-size: var(--b2);
     font-weight: 400;
 }
+.form {
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.formItem {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-family: var(--tf);
+    font-size: var(--b2);
+    color: var(--noir);
+}
+
+.formBox {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: var(--bleu);
+    border-width: 3px;
+}
+
+.formBtn {
+    background-color: var(--white);
+    color: var(--bleu);
+    padding: 10px 15px;
+    border: 3px solid var(--bleu);
+    border-radius: 20px;
+}
+.boxDernier{
+    border-bottom-right-radius: 20px;
+}
+.boxPremier{
+    border-top-left-radius: 20px;
+}
+.formBtnH{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
