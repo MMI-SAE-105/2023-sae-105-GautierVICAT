@@ -7,13 +7,13 @@
 --cbleu: #B2E4FF;
 
 /* Text-size styles */
---h1: 32px;
---h2: 24px;
---h3: 24px;
+--h1: 28px;
+--h2: 22px;
+--h3: 22px;
 --b1: 14px;
 --b2: 14px;
---b3: 12px;
---t1: 32px;
+--b3: 14px;
+--t1: 30px;
 
 /* Font-family styles */
 --tf: overpass, sans-serif;

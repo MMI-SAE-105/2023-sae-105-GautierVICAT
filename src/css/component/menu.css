@@ -1,0 +1,31 @@
+.menu { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    z-index: 100;
+    background-color: var(--bleu);
+}
+.headerMenu__Btn {
+  position: relative;
+  z-index: 1000;
+}
+.noscroll,.noscroll body {
+  overflow: hidden;
+}
+.menuLink {
+    color: var(--white);
+    font-family:var(--tf);
+    font-size: var(--h2);
+    font-weight: 700;
+    line-height: 400%;
+    text-decoration: none;
+}
+.menuItem {
+    list-style: none;
+}
+.menuList {
+    padding-top: 40%;
+}

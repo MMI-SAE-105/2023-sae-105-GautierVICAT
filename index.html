@@ -10,7 +10,8 @@
 </head>
 <body class="accueil">
     <header class="header headerAccueil">
-        <div class="headergen"><div class="headerLogo">
+        <div class="headergen">
+            <div class="headerLogo">
             <a href="index.html" class="headerLogo__link">
                <ul class="headerLogo__List">
                 <li class="headerLogo__Item1">Glass</li>
@@ -20,10 +21,17 @@
             </div>
             <div class="headerIcon">
                 <div class="headerLangue">
-                    <button class="headerBtn headerLangue__Btn"><img src="public/img/icones/lb.svg" alt="menu des langues"></button>
+                    <button class="headerLangue__Btn headerBtn"><img src="public/img/icones/lb.svg" alt="menu des langues"></button>
                 </div>
-                <div class="headerMenu headerMenu__Btn">
-                    <button class="headerBtn"><img src="public/img/icones/menup1.svg" alt="menu"></button>
+                <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="public/img/icones/menup1.svg" alt="menu"></button>
+                    <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
+                          <ul class="menuList">
+                            <li class="menuItem"><a class="menuLink" href="pages/pcjohnson.html">Philip C. Johnson</a></li>
+                            <li class="menuItem"><a class="menuLink" href="pages/frise.html">Ses travaux dans le temps</a></li>
+                            <li class="menuItem"><a class="menuLink" href="pages/expo.html">L'éxposition</a></li>
+                          </ul>
+                      </nav>
                 </div>
             </div>
         </div>
