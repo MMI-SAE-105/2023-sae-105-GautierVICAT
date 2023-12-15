@@ -22,8 +22,15 @@
                 <div class="headerLangue">
                     <button class="headerBtn headerLangue__Btn"><img src="../public/img/icones/lb.svg" alt="menu des langues"></button>
                 </div>
-                <div class="headerMenu headerMenu__Btn">
-                    <button class="headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
+                <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
+                    <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
+                          <ul class="menuList">
+                            <li class="menuItem"><a class="menuLink" href="pcjohnson.html">Philip C. Johnson</a></li>
+                            <li class="menuItem"><a class="menuLink" href="frise.html">Ses travaux dans le temps</a></li>
+                            <li class="menuItem"><a class="menuLink" href="expo.html">L'éxposition</a></li>
+                          </ul>
+                    </nav>
                 </div>
             </section>
         </section>

@@ -10,7 +10,7 @@
 }
 .headerMenu__Btn {
   position: relative;
-  z-index: 1000;
+  z-index: 101;
 }
 .noscroll,.noscroll body {
   overflow: hidden;
