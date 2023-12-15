@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'architecte</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
@@ -20,10 +20,10 @@
             </div>
             <section class="headerIcon">
                 <div class="headerLangue">
-                    <button class="headerBtn headerLangue__Btn"><img src="../public/img/icones/lb.svg" alt="menu des langues"></button>
+                    <button class="headerBtn headerLangue__Btn"><img src="../../public/img/icones/lb.svg" alt="menu des langues"></button>
                 </div>
                 <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
-                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../../public/img/icones/menup1.svg" alt="menu"></button>
                     <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
                           <ul class="menuList">
                             <li class="menuItem"><a class="menuLink" href="pcjohnson.html">Philip C. Johnson</a></li>
@@ -37,43 +37,43 @@
     </header>
     <div>
         <h1 class="artpj__title">Philip C. Johnson</h1>
-        <img class="imgpcj" src="../public/img/images/PJohnson.png" alt="Philip Johnson">
+        <img class="imgpcj" src="../../public/img/images/PJohnson.png" alt="Philip Johnson">
     </div>
     <p class="textpcj">
         Philip Johnson (1906-2005) était un architecte américain de renom, influent dans le développement de l'architecture moderne. 
     </p>
     <section class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
         <h1 class="cartit" >Ses travaux les plus connus</h1>
-        <button class="carrousel_btn btnCarAv" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img src="../public/img/icones/BtnCarAv.svg" alt="bouton carrousel avant"></button>
-        <button class="carrousel_btn btnCarAp" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"><img src="../public/img/icones/BtnCarAp.svg" alt="bouton carrousel après"></button>
+        <button class="carrousel_btn btnCarAv" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img src="../../public/img/icones/BtnCarAv.svg" alt="bouton carrousel avant"></button>
+        <button class="carrousel_btn btnCarAp" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"><img src="../../public/img/icones/BtnCarAp.svg" alt="bouton carrousel après"></button>
         <div class="carrousel_parent-ecrans" x-ref="parent">
             <div id="image-1" class="carrousel_ecran">
                 <figure>
-                    <img class="imgcar" src="../public/img/images/work1.webp" alt="Glass House">
+                    <img class="imgcar" src="../../public/img/images/work1.webp" alt="Glass House">
                     <figcaption>Glass House</figcaption>
                 </figure>
             </div>
             <div id="image-2" class="carrousel_ecran">
                 <figure>
-                    <img class="imgcar" src="../public/img/images/work2.webp" alt="Seagram Building">
+                    <img class="imgcar" src="../../public/img/images/work2.webp" alt="Seagram Building">
                     <figcaption>Seagram Building</figcaption>
                 </figure>
             </div>
             <div id="image-3" class="carrousel_ecran">
                 <figure>
-                    <img class="imgcar" src="../public/img/images/work3.webp" alt="AT&T Building">
+                    <img class="imgcar" src="../../public/img/images/work3.webp" alt="AT&T Building">
                     <figcaption>AT&T Building</figcaption>
                 </figure>
             </div>
             <div id="image-4" class="carrousel_ecran">
                 <figure>
-                    <img class="imgcar" src="../public/img/images/work4.webp" alt="Crystal Cathedral">
+                    <img class="imgcar" src="../../public/img/images/work4.webp" alt="Crystal Cathedral">
                     <figcaption>Crystal Cathedral</figcaption>
                 </figure>
             </div>
             <div id="image-5" class="carrousel_ecran">
                 <figure>
-                    <img class="imgcar" src="../public/img/images/work5.webp" alt="MoMA expension">
+                    <img class="imgcar" src="../../public/img/images/work5.webp" alt="MoMA expension">
                     <figcaption>MoMA expension</figcaption>
                 </figure>
             </div>
@@ -98,8 +98,8 @@
             </ul>
         </div>
         <div class="footerIcon">
-            <a href="/" class="footerLink__Instagram"><img src="../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
-            <a href="/" class="footerLinkedin"><img src="../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+            <a href="/" class="footerLink__Instagram"><img src="../../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
         </div>
     </footer>
 </body>

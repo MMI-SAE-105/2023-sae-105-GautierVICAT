@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exposition</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
@@ -20,10 +20,10 @@
             </div>
             <section class="headerIcon">
                 <div class="headerLangue">
-                    <button class="headerBtn headerLangue__Btn"><img src="../public/img/icones/lb.svg" alt="menu des langues"></button>
+                    <button class="headerBtn headerLangue__Btn"><img src="../../public/img/icones/lb.svg" alt="menu des langues"></button>
                 </div>
                 <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
-                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../../public/img/icones/menup1.svg" alt="menu"></button>
                     <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
                           <ul class="menuList">
                             <li class="menuItem"><a class="menuLink" href="pcjohnson.html">Philip C. Johnson</a></li>
@@ -39,7 +39,7 @@
         <section class="infoExpo">
             <h1 class="expoTitle">Glass Canvas Exposition</h1>
             <p class="expoText">L’exposition se tiendra à la Fondation Cartier, 261Bd Raspail, 75014 Paris.<br>Elle aura lieu du 13 avril au 23juin suivant les horaires suivantes, ouverture tous les jours de 11h à 20h sauf le lundi. Le mardi il y a des nocturnes jusqu’à 22h. Les salles commencent à fermer 15minutes avant la fin de la journée soit 21h45 les mardis et 19h45 les autres jours.</p>
-            <h2 class="tarifTitle">Voici également les différents tarifs :</h2>
+            <h3 class="tarifTitle">Voici également les différents tarifs :</h3>
             <ul class="expoList">
                 <li class="expoList__Item">Plein tarif à 11€</li>
                 <li class="expoList__Item">Tarif réduit à 7.50€</li>
@@ -62,8 +62,8 @@
             </ul>
         </div>
         <div class="footerIcon">
-            <a href="/" class="footerLink__Instagram"><img src="../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
-            <a href="/" class="footerLinkedin"><img src="../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+            <a href="/" class="footerLink__Instagram"><img src="../../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
         </div>
     </footer>
 </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glass Canvas</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body class="accueil">
@@ -21,10 +21,10 @@
             </div>
             <div class="headerIcon">
                 <div class="headerLangue">
-                    <button class="headerLangue__Btn headerBtn"><img src="public/img/icones/lb.svg" alt="menu des langues"></button>
+                    <button class="headerLangue__Btn headerBtn"><img src="../public/img/icones/lb.svg" alt="menu des langues"></button>
                 </div>
                 <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
-                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="public/img/icones/menup1.svg" alt="menu"></button>
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
                     <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
                           <ul class="menuList">
                             <li class="menuItem"><a class="menuLink" href="pages/pcjohnson.html">Philip C. Johnson</a></li>
@@ -43,12 +43,12 @@
             <a href="pages/expo.html" class="btnInfo__link">Cliquez ici pour obtenir plus d’information sur l’exposition et la billetterie de  cette dernière</a>
         </div>
         <section class=" artAcc">
-            <img src="public/img/images/PJohnson.png" alt="Philip Johnson" class="imgJohnson">
+            <img src="../public/img/images/PJohnson.png" alt="Philip Johnson" class="imgJohnson">
             <h2>Philip C. Johnson</h2>
             <a href="pages/pcjohnson.html" class="lienArticle">Voir l'article</a>
         </section>
         <section class="artAcc">
-            <img src="public/img/images/Sablier.png" alt="sablier" class="imgtemps">
+            <img src="../public/img/images/Sablier.png" alt="sablier" class="imgtemps">
             <h2>Une séléction de ses travaux à travers le temps</h2>
             <a href="pages/frise.html" class="lienArticle">Voir la page</a>
         </section>
@@ -62,8 +62,8 @@
             </ul>
         </div>
         <div class="footerIcon">
-            <a href="/" class="footerLink__Instagram"><img src="public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
-            <a href="/" class="footerLinkedin"><img src="public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+            <a href="/" class="footerLink__Instagram"><img src="../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
         </div>
     </footer>
 </body>
