@@ -1,0 +1,18 @@
+.artpj__title{
+    font-size: var(--h2);
+    font-weight: 700;
+    color: var(--noir);
+    font-family: var(--tf);
+    margin: 13px;
+    padding: 10px 0px;
+}
+.imgpcj{
+    width: 100%;
+}
+.textpcj{
+    font-size: var(--b2);
+    font-weight: 400;
+    font-family: var(--tf);
+    color: var(--noir);
+    margin: 13px;
+}

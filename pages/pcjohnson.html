@@ -30,44 +30,58 @@
     </header>
     <div>
         <h1 class="artpj__title">Philip C. Johnson</h1>
-        <img src="../public/img/images/PJohnson.png" alt="Philip Johnson">
+        <img class="imgpcj" src="../public/img/images/PJohnson.png" alt="Philip Johnson">
     </div>
+    <p class="textpcj">
+        Philip Johnson (1906-2005) était un architecte américain de renom, influent dans le développement de l'architecture moderne. 
+    </p>
     <section class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+        <h1 class="cartit" >Ses travaux les plus connus</h1>
         <button class="carrousel_btn btnCarAv" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img src="../public/img/icones/BtnCarAv.svg" alt="bouton carrousel avant"></button>
         <button class="carrousel_btn btnCarAp" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"><img src="../public/img/icones/BtnCarAp.svg" alt="bouton carrousel après"></button>
         <div class="carrousel_parent-ecrans" x-ref="parent">
             <div id="image-1" class="carrousel_ecran">
                 <figure>
-                    <img src="../public/img/images/work1.webp" alt="Glass House">
+                    <img class="imgcar" src="../public/img/images/work1.webp" alt="Glass House">
                     <figcaption>Glass House</figcaption>
                 </figure>
             </div>
             <div id="image-2" class="carrousel_ecran">
                 <figure>
-                    <img src="../public/img/images/work2.webp" alt="Seagram Building">
+                    <img class="imgcar" src="../public/img/images/work2.webp" alt="Seagram Building">
                     <figcaption>Seagram Building</figcaption>
                 </figure>
             </div>
             <div id="image-3" class="carrousel_ecran">
                 <figure>
-                    <img src="../public/img/images/work3.webp" alt="AT&T Building">
+                    <img class="imgcar" src="../public/img/images/work3.webp" alt="AT&T Building">
                     <figcaption>AT&T Building</figcaption>
                 </figure>
             </div>
             <div id="image-4" class="carrousel_ecran">
                 <figure>
-                    <img src="../public/img/images/work4.webp" alt="Crystal Cathedral">
+                    <img class="imgcar" src="../public/img/images/work4.webp" alt="Crystal Cathedral">
                     <figcaption>Crystal Cathedral</figcaption>
                 </figure>
             </div>
             <div id="image-5" class="carrousel_ecran">
                 <figure>
-                    <img src="../public/img/images/work5.webp" alt="MoMA expension">
+                    <img class="imgcar" src="../public/img/images/work5.webp" alt="MoMA expension">
                     <figcaption>MoMA expension</figcaption>
                 </figure>
             </div>
         </div>
     </section>
+    <ul class="caroussel_liste-liens">
+        <li><a href="#image-1" class="carrousel_lien" :class="{actif:hrefCourant==='#image-1'}" >.</a></li>
+        <li><a href="#image-2" class="carrousel_lien" :class="{actif:hrefCourant==='#image-1'}" >.</a></li>
+        <li><a href="#image-3" class="carrousel_lien" :class="{actif:hrefCourant==='#image-1'}" >.</a></li>
+        <li><a href="#image-4" class="carrousel_lien" :class="{actif:hrefCourant==='#image-1'}" >.</a></li>
+        <li><a href="#image-5" class="carrousel_lien" :class="{actif:hrefCourant==='#image-1'}" >.</a></li>
+    </ul>
+    <p class="textpcj">
+        Il a coorganisé l'exposition "International Style" en 1932, puis conçu la Glass House en 1949, une résidence emblématique caractérisée par des murs entièrement vitrés. Sa carrière a également inclus des projets majeurs tels que le Seagram Building à New York. Johnson a joué un rôle clé au MoMA et a été critiqué pour ses opinions politiques controversées. Il est décédé en 2005, laissant derrière lui un héritage durable dans l'histoire de l'architecture moderne
+    </p>
     <footer>
         <div class="footerNav">
             <ul class="footerList">
