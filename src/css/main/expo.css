@@ -1,0 +1,29 @@
+.expoTitle{
+    font-size: var(--h2);
+    font-family: var(--tf);
+    font-weight: 700;
+    padding: 10px;
+    color: var(--noir);
+}
+.expoText, .tarifTitle,.expoList__Item{
+    font-size: var(--b2);
+    font-family: var(--tf);
+    font-weight: 400;
+    color: var(--noir);
+}
+.expoText,.tarifTitle{
+    padding: 10px;
+}
+.billeterieBtn{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--bleu);
+    padding:17px;
+    border-style: solid;
+    border-color: var(--cbleu);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 3px;
+}
