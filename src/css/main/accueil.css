@@ -3,6 +3,7 @@
     font-weight: 400;
     font-family: var(--tf);
     margin: 10px;
+    color: var(--noir);
 }
 .btnInfo{
     width: 100%;

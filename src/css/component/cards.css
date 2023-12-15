@@ -1,0 +1,33 @@
+.artAcc{
+    background-color: var(--bleu);
+    margin: 10px;
+    padding: 10px;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    border-style: solid;
+    border-color: var(--cbleu);
+    border-width: 3px;
+}
+.imgJohnson,.imgtemps{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.artAcc h2{
+    font-size: var(--b3);
+    font-weight: 400;
+    color: var(--white);
+    font-family: var(--tf);
+}
+.artAcc a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--b3);
+    font-weight: 400;
+    font-family: var(--tf);
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--cbleu);
+    border-width: 3px;
+    padding: 5px;
+}
