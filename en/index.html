@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Canvas</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body class="accueil">
+    <header class="header headerAccueil">
+        <div class="headergen">
+            <div class="headerLogo">
+            <a href="index.html" class="headerLogo__link">
+               <ul class="headerLogo__List">
+                <li class="headerLogo__Item1">Glass</li>
+                <li class="headerLogo__Item2">Canvas</li>
+               </ul>
+            </a>
+            </div>
+            <div class="headerIcon">
+                <div class="headerLangue">
+                    <button class="headerLangue__Btn headerBtn"><img src="../public/img/icones/lb.svg" alt="menu des langues"></button>
+                </div>
+                <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
+                    <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
+                          <ul class="menuList">
+                            <li class="menuItem"><a class="menuLink" href="pages/pcjohnson.html">Philip C. Johnson</a></li>
+                            <li class="menuItem"><a class="menuLink" href="pages/frise.html">Ses travaux dans le temps</a></li>
+                            <li class="menuItem"><a class="menuLink" href="pages/expo.html">L'éxposition</a></li>
+                          </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1 class="accueilTitle">Philip C. Johnson l'architecte du verre</h1>
+    </header>
+    <main>
+        <p class="textAccueil">Bienvenue sur le site préparé en vue d'une exposition dédiée à l'architecte visionnaire, Philip Johnson. Explorez les créations emblématiques de ce pionnier du XXe siècle, telles que le Glass House et la tour Lipstick Building, qui ont redéfini l'architecture. Plongez dans ses influences variées, des mouvements modernistes aux expérimentations postmodernes. Célébrant l'ingéniosité intemporelle de Johnson, ce site offre une immersion captivante dans son impact durable sur l'architecture mondiale. Rejoignez-nous dans l'anticipation de l'exposition rendant hommage à cet architecte qui a repoussé les limites de la créativité.</p>
+        <div class="btnInfo">
+            <a href="pages/expo.html" class="btnInfo__link">Cliquez ici pour obtenir plus d’information sur l’exposition et la billetterie de  cette dernière</a>
+        </div>
+        <section class=" artAcc">
+            <img src="../public/img/images/PJohnson.png" alt="Philip Johnson" class="imgJohnson">
+            <h2>Philip C. Johnson</h2>
+            <a href="pages/pcjohnson.html" class="lienArticle">Voir l'article</a>
+        </section>
+        <section class="artAcc">
+            <img src="../public/img/images/Sablier.png" alt="sablier" class="imgtemps">
+            <h2>Une séléction de ses travaux à travers le temps</h2>
+            <a href="pages/frise.html" class="lienArticle">Voir la page</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <ul class="footerList">
+                <li class="footerItem"><a href="pages/expo.html" class="footerLink">Billeterie</a></li>
+                <li class="footerItem"><a href="pages/about.html" class="footerLink">À propos</a></li>
+                <li class="footerItem"><a href="pages/about.html" class="footerLink">Nous contacter</a></li>
+            </ul>
+        </div>
+        <div class="footerIcon">
+            <a href="/" class="footerLink__Instagram"><img src="../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>

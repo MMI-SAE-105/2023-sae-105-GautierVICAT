@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frise</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <section class="headergen"><div class="headerLogo">
+            <a href="../index.html" class="headerLogo__link">
+               <ul class="headerLogo__List">
+                <li class="headerLogo__Item1">Glass</li>
+                <li class="headerLogo__Item2">Canvas</li>
+               </ul>
+            </a>
+            </div>
+            <section class="headerIcon">
+                <div class="headerLangue">
+                    <button class="headerBtn headerLangue__Btn"><img src="../../public/img/icones/lb.svg" alt="menu des langues"></button>
+                </div>
+                <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../../public/img/icones/menup1.svg" alt="menu"></button>
+                    <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
+                          <ul class="menuList">
+                            <li class="menuItem"><a class="menuLink" href="pcjohnson.html">Philip C. Johnson</a></li>
+                            <li class="menuItem"><a class="menuLink" href="frise.html">Ses travaux dans le temps</a></li>
+                            <li class="menuItem"><a class="menuLink" href="expo.html">L'éxposition</a></li>
+                          </ul>
+                    </nav>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h1 class="artts__title">Ses réalisations dans le temps</h1>
+            <img class="imgts" src="../../public/img/images/Sablier.png" alt="Sablier">
+            <p class="imgDesA">Image d'un sablier</p>
+        </section>
+        <div class="frise">
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1949.html">
+                    <h1 class="friseTA">1949</h1>
+                    <img class="friseImg" src="../../public/img/images/work1.webp" alt="Glass House">
+                    <p class="friseText">Glass House (New Canaan,Connecticut, 1949)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1953.html">
+                    <h1 class="friseTA">1953</h1>
+                    <img class="friseImg" src="../../public/img/images/work9.webp" alt="MoMA">
+                    <p class="friseText">MoMA Sculpture Garden (New York, 1953)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1958.html">
+                    <h1 class="friseTA">1958</h1>
+                    <img class="friseImg" src="../../public/img/images/work2.webp" alt="Seagram Building">
+                    <p class="friseText">Seagram Building (New York, 1958)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1974.html">
+                    <h1 class="friseTA">1974</h1>
+                    <img class="friseImg" src="../../public/img/images/work7.webp" alt="Fort Worth Water Gardens">
+                    <p class="friseText">Fort Worth Water Gardens (Fort Worth, Texas 1974)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1984.html">
+                    <h1 class="friseTA">1984</h1>
+                    <img class="friseImg" src="../../public/img/images/work3.webp" alt="AT&T Building">
+                    <p class="friseText">AT&T Building (New York, 1984)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1984bis.html">
+                    <h1 class="friseTA">1984</h1>
+                    <img class="friseImg" src="../../public/img/images/work8.webp" alt="PPG Place">
+                    <p class="friseText">PPG Place (Pittsburgh, Pennsylvanie, 1984)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/1986.html">
+                    <h1 class="friseTA">1986</h1>
+                    <img class="friseImg" src="../../public/img/images/work6.webp" alt="Lipstick building">
+                    <p class="friseText">Lipstick Building (New York,1986)</p>
+                </a>
+            </section>
+            <section class="friseContent">
+                <a class="friseLink" href="articles/2004.html">
+                    <h1 class="friseTA">2004</h1>
+                    <img class="friseImg" src="../../public/img/images/work5.webp" alt="MoMA Expension">
+                    <p class="friseText">MoMA Expension (New York, 2004)</p>
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <ul class="footerList">
+                <li class="footerItem"><a href="expo.html" class="footerLink">Billeterie</a></li>
+                <li class="footerItem"><a href="about.html" class="footerLink">À propos</a></li>
+                <li class="footerItem"><a href="about.html" class="footerLink">Nous contacter</a></li>
+            </ul>
+        </div>
+        <div class="footerIcon">
+            <a href="/" class="footerLink__Instagram"><img src="../../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+        </div>
+    </footer>
+</body>

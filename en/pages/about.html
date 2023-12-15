@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <section class="headergen"><div class="headerLogo">
+            <a href="../index.html" class="headerLogo__link">
+               <ul class="headerLogo__List">
+                <li class="headerLogo__Item1">Glass</li>
+                <li class="headerLogo__Item2">Canvas</li>
+               </ul>
+            </a>
+            </div>
+            <section class="headerIcon">
+                <div class="headerLangue">
+                    <button class="headerBtn headerLangue__Btn"><img src="../../public/img/icones/lb.svg" alt="menu des langues"></button>
+                </div>
+                <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../../public/img/icones/menup1.svg" alt="menu"></button>
+                    <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
+                          <ul class="menuList">
+                            <li class="menuItem"><a class="menuLink" href="pcjohnson.html">Philip C. Johnson</a></li>
+                            <li class="menuItem"><a class="menuLink" href="frise.html">Ses travaux dans le temps</a></li>
+                            <li class="menuItem"><a class="menuLink" href="expo.html">L'éxposition</a></li>
+                          </ul>
+                    </nav>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section id="about">
+            <h1 class="aboutTitle">À propos</h1>
+            <p class="aboutText">Bonjour je m’appelle Gautier Vicat je suis étudiant en première année de BUT MMI à Montbéliard. Ce site à été réaliser dans le cadre d’un exercice pédagogique au département MMI de Montbéliard. Cet été de produire un site autour d’une exposition sur un architecte.</p>
+        </section>
+        <section id="contact">
+            <h1 class="aboutTitle">Nous contacter</h1>
+            <p class="aboutText">Pour nous contacter plusieurs options s’offres à vous, vous pouvez vous rendre sur nos réseaux sociaux disponibles dans le pied de page ou nous contacter directement à l’adresse mail vicat.gautier@gmail.com. Vous pouvez également remplir le formulaire si dessous pour nous envoyer un message.</p>
+            <form class="form">
+                <label class="formItem" for="nom">Veuillez indiquer votre nom</label>
+                <input class="formBox boxPremier" type="text" id="nom" name="nom" required>
+                <label class="formItem" for="prenom">Veuillez indiquer votre prénom</label>
+                <input class="formBox" type="text" id="prenom" name="prenom" required>
+                <label class="formItem" for="email">Veuillez indiquer votre adresse mail</label>
+                <input class="formBox" type="email" id="email" name="email" required>
+                <label class="formItem" for="email">Veuillez indiquer l'objet de votre message</label>
+                <input class="formBox" type="text" id="objet" name="objet" required>
+                <label class="formItem" for="email">Veuillez indiquer votre message</label>
+                <input class="formBox boxDernier" type="text" id="message" name="message" required>
+                <div class="formBtnH"><button class="formBtn">Envoyer</button></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <ul class="footerList">
+                <li class="footerItem"><a href="expo.html" class="footerLink">Billeterie</a></li>
+                <li class="footerItem"><a href="about.html" class="footerLink">À propos</a></li>
+                <li class="footerItem"><a href="about.html" class="footerLink">Nous contacter</a></li>
+            </ul>
+        </div>
+        <div class="footerIcon">
+            <a href="/" class="footerLink__Instagram"><img src="../../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>

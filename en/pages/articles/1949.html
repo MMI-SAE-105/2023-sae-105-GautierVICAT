@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="../../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <section class="headergen"><div class="headerLogo">
+            <a href="../../index.html" class="headerLogo__link">
+               <ul class="headerLogo__List">
+                    <li class="headerLogo__Item1">Glass</li>
+                    <li class="headerLogo__Item2">Canvas</li>
+               </ul>
+            </a>
+            </div>
+            <section class="headerIcon">
+                <div class="headerLangue">
+                    <button class="headerBtn headerLangue__Btn"><img src="../../../public/img/icones/lb.svg" alt="menu des langues"></button>
+                </div>
+                <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+                    <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../../../public/img/icones/menup1.svg" alt="menu"></button>
+                    <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
+                          <ul class="menuList">
+                            <li class="menuItem"><a class="menuLink" href="../pcjohnson.html">Philip C. Johnson</a></li>
+                            <li class="menuItem"><a class="menuLink" href="../frise.html">Ses travaux dans le temps</a></li>
+                            <li class="menuItem"><a class="menuLink" href="../expo.html">L'éxposition</a></li>
+                          </ul>
+                    </nav>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section class="articleContent">
+            <h1 class="articleTitle">Glass House</h1>
+            <p class="articleText">La Glass House, conçue par l'architecte américain Philip Johnson, est une résidence emblématique située à New Canaan, dans le Connecticut. Construite entre 1949 et 1950, elle est caractérisée par ses murs entièrement vitrés, sans supports structurels visibles, créant ainsi un espace transparent et ouvert. La structure rectangulaire est surélevée par des piliers en acier, donnant l'impression que la maison flotte au-dessus du sol. La Glass House est souvent considérée comme un chef-d'œuvre du modernisme et de l'architecture minimaliste, incarnant les idées de transparence, d'ouverture et d'intégration harmonieuse avec son environnement naturel.</p>
+            <div class="articleImg">
+                <img class="articlesImg" src="../../../public/img/images/work1.webp" alt="image Glass House">
+                <img class="articlesImg" src="../../../public/img/images/work1-1.webp" alt="image Glass House">
+                <img class="articlesImg" src="../../../public/img/images/work1-2.webp" alt="image Glass House">
+                <p class="imgDes">Images de la Glass House</p>
+            </div>
+            <div class="articlesBtn">
+                <a class="articlesPlus" href="https://fr.wikipedia.org/wiki/Maison_de_verre_(Philip_Johnson)">En savoir plus</a>
+                <a class="articlesRetour" href="../frise.html">Retour à la frise</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <ul class="footerList">
+                <li class="footerItem"><a href="../expo.html" class="footerLink">Billeterie</a></li>
+                <li class="footerItem"><a href="../about.html" class="footerLink">À propos</a></li>
+                <li class="footerItem"><a href="../about.html" class="footerLink">Nous contacter</a></li>
+            </ul>
+        </div>
+        <div class="footerIcon">
+            <a href="/" class="footerLink__Instagram"><img src="../../../public/img/icones/Instagram-Bleu.svg" alt="logo instagram"></a>
+            <a href="/" class="footerLinkedin"><img src="../../../public/img/icones/Linkedin-Bleu.svg" alt="logo linkedin"></a>
+        </div>
+    </footer>
+</body>
