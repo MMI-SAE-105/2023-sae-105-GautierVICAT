@@ -22,3 +22,19 @@
 .articleImg{
     padding: 10px;
 }
+.articlesBtn{
+    width: 100%;
+}
+.articlesRetour{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--bleu);
+    padding:17px;
+    border-style: solid;
+    border-color: var(--cbleu);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 3px;
+    margin:10px;
+}

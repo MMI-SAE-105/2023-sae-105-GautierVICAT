@@ -5,10 +5,10 @@
     margin: 10px;
     color: var(--noir);
 }
-.articlesBtn{
+.btnInfo{
     width: 100%;
 }
-.articlesRetour{
+.btnInfo__link{
     display: block;
     text-decoration: none;
     color: var(--white);
@@ -20,5 +20,4 @@
     border-bottom-right-radius: 20px;
     border-width: 3px;
     margin:10px;
-    text-align: center;
 }
