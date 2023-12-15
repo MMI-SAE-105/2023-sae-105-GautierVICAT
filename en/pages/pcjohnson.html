@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'architecte</title>
+    <title>The architect</title>
     <link rel="stylesheet" href="../../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
@@ -27,8 +27,8 @@
                     <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
                           <ul class="menuList">
                             <li class="menuItem"><a class="menuLink" href="pcjohnson.html">Philip C. Johnson</a></li>
-                            <li class="menuItem"><a class="menuLink" href="frise.html">Ses travaux dans le temps</a></li>
-                            <li class="menuItem"><a class="menuLink" href="expo.html">L'éxposition</a></li>
+                            <li class="menuItem"><a class="menuLink" href="frise.html">His works in the time</a></li>
+                            <li class="menuItem"><a class="menuLink" href="expo.html">The exhibition</a></li>
                           </ul>
                     </nav>
                 </div>
@@ -38,16 +38,16 @@
     <div>
         <h1 class="artpj__title">Philip C. Johnson</h1>
         <img class="imgpcj" src="../../public/img/images/PJohnson.png" alt="Philip Johnson">
-        <p class="imgDesA">Photo de Philip Johnson</p>
+        <p class="imgDesA">Picture of Philip Johnson</p>
     </div>
     <p class="textpcj">
-        "Toute architecture est un abri, mais la grande architecture est le design d'un espace qui contient, câline, exalte ou stimule les personnes dans cet espace"<br>Philip C. Johnson
+        "All architecture is shelter, but great architecture is the design of a space that contains, embraces, enhances, or stimulates the people within that space."<br>Philip C. Johnson
     </p>
     <p class="textpcj">
-        Philip Johnson (1906-2005) était un architecte américain de renom, influent dans le développement de l'architecture moderne. 
+        Philip Johnson (1906-2005) He was a renowned American architect, influential in the development of modern architecture. 
     </p>
     <section class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-        <h1 class="cartit" >Ses travaux les plus connus</h1>
+        <h1 class="cartit" >His most famous works</h1>
         <button class="carrousel_btn btnCarAv" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img src="../../public/img/icones/BtnCarAv.svg" alt="bouton carrousel avant"></button>
         <button class="carrousel_btn btnCarAp" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"><img src="../../public/img/icones/BtnCarAp.svg" alt="bouton carrousel après"></button>
         <div class="carrousel_parent-ecrans" x-ref="parent">
@@ -91,15 +91,15 @@
         </ul>
     </section>
     <p class="textpcj">
-        Il a coorganisé l'exposition "International Style" en 1932, puis conçu la Glass House en 1949, une résidence emblématique caractérisée par des murs entièrement vitrés. Sa carrière a également inclus des projets majeurs tels que le Seagram Building à New York. Johnson a joué un rôle clé au MoMA et a été critiqué pour ses opinions politiques controversées. Il est décédé en 2005, laissant derrière lui un héritage durable dans l'histoire de l'architecture moderne
+        He co-organized the "International Style" exhibition in 1932, and later designed the Glass House in 1949, an iconic residence characterized by entirely glass walls. His career also included major projects such as the Seagram Building in New York. Johnson played a key role at MoMA and was criticized for his controversial political views. He passed away in 2005, leaving behind a lasting legacy in the history of modern architecture.
     </p>
-    <a class="articlesPlus" href="https://fr.wikipedia.org/wiki/Philip_Johnson">En savoir plus sur Philip Johnson</a>
+    <a class="articlesPlus" href="https://fr.wikipedia.org/wiki/Philip_Johnson">Learn more about Philip Johnson</a>
     <footer>
         <div class="footerNav">
             <ul class="footerList">
                 <li class="footerItem"><a href="expo.html" class="footerLink">Billeterie</a></li>
-                <li class="footerItem"><a href="about.html" class="footerLink">À propos</a></li>
-                <li class="footerItem"><a href="about.html" class="footerLink">Nous contacter</a></li>
+                <li class="footerItem"><a href="about.html" class="footerLink">About</a></li>
+                <li class="footerItem"><a href="about.html" class="footerLink">Contact us</a></li>
             </ul>
         </div>
         <div class="footerIcon">
