@@ -1,0 +1,13 @@
+.aboutTitle, .aboutText {
+    font-family: var(--tf);
+    color: var(--noir);
+    margin: 10px;
+}
+.aboutTitle{
+    font-size: var(--h2);
+    font-weight: 700;
+}
+.aboutText{
+    font-size: var(--b2);
+    font-weight: 400;
+}
