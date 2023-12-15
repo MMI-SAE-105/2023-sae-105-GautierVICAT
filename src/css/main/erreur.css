@@ -1,4 +1,4 @@
-body{
+.bodyerror{
     background-color: var(--bleu);
     font-family: var(--tf);
 }
