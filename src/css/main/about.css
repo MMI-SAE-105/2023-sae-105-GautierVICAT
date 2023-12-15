@@ -41,6 +41,9 @@
     padding: 10px 15px;
     border: 3px solid var(--bleu);
     border-radius: 20px;
+    font-family: var(--tf);
+    font-size: var(--b1);
+    font-weight: 700;
 }
 .boxDernier{
     border-bottom-right-radius: 20px;
