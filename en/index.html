@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,44 +21,44 @@
             </div>
             <div class="headerIcon">
                 <div class="headerLangue">
-                    <button class="headerLangue__Btn headerBtn"><img src="../public/img/icones/lb.svg" alt="menu des langues"></button>
+                    <button class="headerLangue__Btn headerBtn"><img src="../public/img/icones/lb.svg" alt="menu of languages"></button>
                 </div>
                 <div class="headerMenu" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
                     <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headerMenu__Btn headerBtn"><img src="../public/img/icones/menup1.svg" alt="menu"></button>
                     <nav id="mainNav" x-transition:.duration.500ms x-show="menuIsOpen" class="menu" >
                           <ul class="menuList">
                             <li class="menuItem"><a class="menuLink" href="pages/pcjohnson.html">Philip C. Johnson</a></li>
-                            <li class="menuItem"><a class="menuLink" href="pages/frise.html">Ses travaux dans le temps</a></li>
-                            <li class="menuItem"><a class="menuLink" href="pages/expo.html">L'éxposition</a></li>
+                            <li class="menuItem"><a class="menuLink" href="pages/frise.html">his works in the time</a></li>
+                            <li class="menuItem"><a class="menuLink" href="pages/expo.html">The exhibition</a></li>
                           </ul>
                     </nav>
                 </div>
             </div>
         </div>
-        <h1 class="accueilTitle">Philip C. Johnson l'architecte du verre</h1>
+        <h1 class="accueilTitle">Philip C. Johnson, the glass architect</h1>
     </header>
     <main>
-        <p class="textAccueil">Bienvenue sur le site préparé en vue d'une exposition dédiée à l'architecte visionnaire, Philip Johnson. Explorez les créations emblématiques de ce pionnier du XXe siècle, telles que le Glass House et la tour Lipstick Building, qui ont redéfini l'architecture. Plongez dans ses influences variées, des mouvements modernistes aux expérimentations postmodernes. Célébrant l'ingéniosité intemporelle de Johnson, ce site offre une immersion captivante dans son impact durable sur l'architecture mondiale. Rejoignez-nous dans l'anticipation de l'exposition rendant hommage à cet architecte qui a repoussé les limites de la créativité.</p>
+        <p class="textAccueil">Welcome to the website prepared for an exhibition dedicated to the visionary architect, Philip Johnson. Explore the iconic creations of this 20th-century pioneer, such as the Glass House and the Lipstick Building, which have redefined architecture. Dive into his varied influences, from modernist movements to postmodern experiments. Celebrating Johnson's timeless ingenuity, this site offers a captivating immersion into his lasting impact on global architecture. Join us in anticipation of the exhibition paying tribute to this architect who pushed the boundaries of creativity.</p>
         <div class="btnInfo">
-            <a href="pages/expo.html" class="btnInfo__link">Cliquez ici pour obtenir plus d’information sur l’exposition et la billetterie de  cette dernière</a>
+            <a href="pages/expo.html" class="btnInfo__link">Click here for more information on the exhibition and to purchase tickets</a>
         </div>
         <section class=" artAcc">
             <img src="../public/img/images/PJohnson.png" alt="Philip Johnson" class="imgJohnson">
             <h2>Philip C. Johnson</h2>
-            <a href="pages/pcjohnson.html" class="lienArticle">Voir l'article</a>
+            <a href="pages/pcjohnson.html" class="lienArticle">See the article</a>
         </section>
         <section class="artAcc">
             <img src="../public/img/images/Sablier.png" alt="sablier" class="imgtemps">
-            <h2>Une séléction de ses travaux à travers le temps</h2>
-            <a href="pages/frise.html" class="lienArticle">Voir la page</a>
+            <h2>A selection of his works throughout time</h2>
+            <a href="pages/frise.html" class="lienArticle">See the page</a>
         </section>
     </main>
     <footer>
         <div class="footerNav">
             <ul class="footerList">
-                <li class="footerItem"><a href="pages/expo.html" class="footerLink">Billeterie</a></li>
-                <li class="footerItem"><a href="pages/about.html" class="footerLink">À propos</a></li>
-                <li class="footerItem"><a href="pages/about.html" class="footerLink">Nous contacter</a></li>
+                <li class="footerItem"><a href="pages/expo.html" class="footerLink">Ticketing</a></li>
+                <li class="footerItem"><a href="pages/about.html" class="footerLink">About</a></li>
+                <li class="footerItem"><a href="pages/about.html" class="footerLink">Contact us</a></li>
             </ul>
         </div>
         <div class="footerIcon">
