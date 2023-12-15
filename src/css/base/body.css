@@ -1,3 +1,9 @@
 body{
     background-color: var(--white);
 }
+.imgDesA{
+    font-family: var(--tf);
+    color: var(--noir);
+    font-size: var(--b3);
+    margin-left: 10px;
+}
