@@ -1,0 +1,31 @@
+.frise{
+    display: block;
+    border-left: 12px solid var(--bleu);
+    margin-left: 30px;
+    border-top-left-radius: 20px;
+    margin-top: 10px;
+}
+.friseLink, .friseTA,.friseText{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--tf);
+}
+.friseContent{
+    background-color: var(--bleu);
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom-right-radius: 20px ;
+}
+.friseImg{
+    width: 100%;
+}
+.friseText{
+    font-weight: 400;
+    font-size: var(--b2);
+}
+.friseTA{
+    font-weight: 700;
+    padding-left: 30px;
+    font-size: var(--b1);
+}
