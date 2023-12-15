@@ -25,7 +25,7 @@
 .articlesBtn{
     width: 100%;
 }
-.articlesRetour{
+.articlesRetour,.articlesPlus{
     display: block;
     text-decoration: none;
     color: var(--white);
@@ -37,4 +37,10 @@
     border-bottom-right-radius: 20px;
     border-width: 3px;
     margin:10px;
+    text-align: center;
+}
+.imgDes{
+    font-family: var(--tf);
+    color: var(--noir);
+    font-size: var(--b3);
 }
